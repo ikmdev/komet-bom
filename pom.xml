@@ -479,6 +479,20 @@
                 <artifactId>component</artifactId>
                 <version>${tinkar-core.version}</version>
             </dependency>
+            <!--
+                Maven keys dependencyManagement entries by
+                groupId+artifactId+type+classifier. The entry above covers the
+                default JAR; this separate entry covers the test-jar classifier
+                so consumers (e.g. data-mvstore-provider tests) can depend on
+                'component:tests' without declaring an explicit <version>.
+            -->
+            <dependency>
+                <groupId>dev.ikm.tinkar</groupId>
+                <artifactId>component</artifactId>
+                <version>${tinkar-core.version}</version>
+                <type>test-jar</type>
+                <classifier>tests</classifier>
+            </dependency>
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
                 <artifactId>data-ephemeral-provider</artifactId>
@@ -522,6 +536,11 @@
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
                 <artifactId>language-extensions</artifactId>
+                <version>${tinkar-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.ikm.tinkar</groupId>
+                <artifactId>plugin-service-loader</artifactId>
                 <version>${tinkar-core.version}</version>
             </dependency>
             <dependency>
