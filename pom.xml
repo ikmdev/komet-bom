@@ -12,7 +12,7 @@
 
     <groupId>dev.ikm.komet</groupId>
     <artifactId>komet-bom</artifactId>
-    <version>3.0.7-SNAPSHOT</version>
+    <version>3.0.7-reasoner-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Komet BOM</name>
