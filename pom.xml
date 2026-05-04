@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.1.0 https://maven.apache.org/xsd/maven-4.1.0.xsd">
     <modelVersion>4.1.0</modelVersion>
 
-    <parent>
-        <groupId>network.ike.pipeline</groupId>
+ <parent>
+        <groupId>network.ike.platform</groupId>
         <artifactId>ike-parent</artifactId>
-        <version>111</version>
+        <version>14</version>
         <relativePath/>
     </parent>
 
@@ -47,7 +47,10 @@
         <ikm-evrete.version>4.0.3</ikm-evrete.version>
         <ikonli.version>12.3.1</ikonli.version>
         <java.version>25</java.version>
-        <javafx.version>25</javafx.version>
+        <javafx.version>26.0.1</javafx.version>
+        <jfx-incubator-richtext.version>26</jfx-incubator-richtext.version>
+        <commonmark.version>0.24.0</commonmark.version>
+        <ike-commonmark-attributes.version>1.0.0-SNAPSHOT</ike-commonmark-attributes.version>
         <jgit.version>6.10.0.202406032230-r-r5</jgit.version>
         <jgrapht.version>1.5.2</jgrapht.version>
         <jheaps.version>0.14-r16</jheaps.version>
@@ -59,7 +62,7 @@
         <junit-platform.version>6.0.0</junit-platform.version>
         <komet.version>1.59.0-SNAPSHOT</komet.version>
         <log4j.version>3.0.0-beta2</log4j.version>
-        <lucene.version>10.3.1</lucene.version>
+        <lucene.version>10.4.0</lucene.version>
         <mockito.version>5.21.0</mockito.version>
         <mvstore.version>2.3.232-r3</mvstore.version>
         <nsmenufx.version>3.1.0</nsmenufx.version>
@@ -945,6 +948,34 @@
                 <artifactId>javafx-swing</artifactId>
                 <version>${javafx.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>jfx-incubator-richtext</artifactId>
+                <version>${jfx-incubator-richtext.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.commonmark</groupId>
+                <artifactId>commonmark</artifactId>
+                <version>${commonmark.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.commonmark</groupId>
+                <artifactId>commonmark-ext-gfm-tables</artifactId>
+                <version>${commonmark.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.commonmark</groupId>
+                <artifactId>commonmark-ext-gfm-strikethrough</artifactId>
+                <version>${commonmark.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>network.ike.platform</groupId>
+                <artifactId>ike-commonmark-attributes</artifactId>
+                <version>${ike-commonmark-attributes.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-web</artifactId>
