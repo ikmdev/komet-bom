@@ -68,10 +68,10 @@
         <jsr305.version>3.0.2-r7</jsr305.version>
         <junit-platform.version>6.0.0</junit-platform.version>
         <komet.version>1.59.0-SNAPSHOT</komet.version>
-        <log4j.version>3.0.0-beta3</log4j.version>
+        <log4j.version>2.26.0</log4j.version>
         <!-- log4j-api and log4j-slf4j2-impl have no 3.0.0-beta3 release -->
-        <log4j-api.version>3.0.0-beta2</log4j-api.version>
-        <log4j-slf4j2-impl.version>3.0.0-beta2</log4j-slf4j2-impl.version>
+        <log4j-api.version>2.26.0</log4j-api.version>
+        <log4j-slf4j2-impl.version>2.26.0</log4j-slf4j2-impl.version>
         <lucene.version>10.4.0</lucene.version>
         <mockito.version>5.21.0</mockito.version>
         <mvstore.version>2.3.232-r3</mvstore.version>
