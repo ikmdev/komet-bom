@@ -6,7 +6,7 @@
  <parent>
         <groupId>network.ike.platform</groupId>
         <artifactId>ike-parent</artifactId>
-        <version>106</version>
+        <version>113</version>
         <relativePath/>
     </parent>
 
@@ -51,6 +51,9 @@
         <fasterxml-jackson-core.version>2.21.0</fasterxml-jackson-core.version>
         <fxcomponents.version>1.6.2</fxcomponents.version>
         <hybrid-reasoner-snomed.version>1.1.9</hybrid-reasoner-snomed.version>
+        <!-- ike-docs (foundation library, UPSTREAM of komet in the release cascade): koncept-core.
+             Released ike-docs version that komet re-points to in Increment 5 (koncept-core, #623). -->
+        <ike-docs.version>80</ike-docs.version>
         <ikm-evrete.version>4.0.3</ikm-evrete.version>
         <ikonli.version>12.3.1</ikonli.version>
         <java.version>25</java.version>
@@ -990,6 +993,15 @@
                 <groupId>org.commonmark</groupId>
                 <artifactId>commonmark-ext-gfm-strikethrough</artifactId>
                 <version>${commonmark.version}</version>
+            </dependency>
+
+            <!-- ike-docs koncept-core (ike-issues#623): the shared, JavaFX-free component-kind +
+                 stamp-sigil geometry. Komet re-points its duplicate framework/controls copies to this
+                 published module downstream in the cascade. -->
+            <dependency>
+                <groupId>network.ike.docs</groupId>
+                <artifactId>koncept-core</artifactId>
+                <version>${ike-docs.version}</version>
             </dependency>
 
             <dependency>
