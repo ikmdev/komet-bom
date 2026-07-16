@@ -57,8 +57,16 @@
         <ikm-evrete.version>4.0.3</ikm-evrete.version>
         <ikonli.version>12.3.1</ikonli.version>
         <java.version>25</java.version>
-        <javafx.version>26.0.1</javafx.version>
-        <jfx-incubator-richtext.version>26</jfx-incubator-richtext.version>
+        <!-- 27-ea, not the stable 26.x line: opening a concept window ("Open in workspace")
+             deterministically corrupts JavaFX's looked-up-color resolution app-wide on every
+             26.x/24.x build tested (JDK-8268657 symptom — open upstream since 2021; its Jul 2026
+             fix was backed out for a perf regression). Only the 27-ea line is clean, most likely
+             via the JDK-8375363 CssStyleHelper.resetToInitialValues() lifecycle rewrite (mainline
+             Jan 2026, never backported to jfx26u). Move to 27 GA when it ships (2026-09-15).
+             See IKE-Network/ike-komet-wsr#4. Keep the incubator module version identical to
+             javafx.version. -->
+        <javafx.version>27-ea+24</javafx.version>
+        <jfx-incubator-richtext.version>27-ea+24</jfx-incubator-richtext.version>
         <commonmark.version>0.24.0</commonmark.version>
         <ike-commonmark-attributes.version>1.0.0-SNAPSHOT</ike-commonmark-attributes.version>
         <jgit.version>6.10.0.202406032230-r-r5</jgit.version>
