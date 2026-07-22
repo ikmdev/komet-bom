@@ -1,6 +1,6 @@
-# ike-bom
+# komet-bom
 
-ike-bom component.
+komet-bom subproject.
 
 ## Build Standards
 
@@ -14,7 +14,7 @@ mvn clean verify -DskipTests -T4
 
 ## Key Facts
 
-- GroupId: `dev.ikm.ike`
+- GroupId: `dev.ikm.komet`
 - Version: `3.0.7-SNAPSHOT`
 - Uses `--enable-preview` (Java 25)
 - BOM: imports `dev.ikm.ike:ike-bom` for dependency version management
@@ -27,4 +27,4 @@ mvn clean verify -DskipTests -T4
 - **Never embed shell commands inline in POM** — extract to a named script
 
 See `.claude/standards/` (after `mvn validate`) for full standards.
-See `CLAUDE-ike-bom.md` for project-specific notes.
+See `CLAUDE-komet-bom.md` for project-specific notes.
