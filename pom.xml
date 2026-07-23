@@ -381,6 +381,11 @@
             </dependency>
             <dependency>
                 <groupId>dev.ikm.komet</groupId>
+                <artifactId>artifact-resolution</artifactId>
+                <version>${komet.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.ikm.komet</groupId>
                 <artifactId>builder</artifactId>
                 <version>${komet.version}</version>
             </dependency>
