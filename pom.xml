@@ -53,9 +53,16 @@
         <hybrid-reasoner-snomed.version>1.1.9</hybrid-reasoner-snomed.version>
         <!-- ike-docs (foundation library, UPSTREAM of komet in the release cascade): koncept-core.
              Released ike-docs version that komet re-points to in Increment 5 (koncept-core, #623). -->
-        <ike-docs.version>80</ike-docs.version>
+        <ike-docs.version>93</ike-docs.version>
         <ikm-evrete.version>4.0.3</ikm-evrete.version>
+        <!-- IKE-patched ikonli-javafx: the ONE change is the FontIcon iconCode listener
+             null-guard (kordamp/ikonli#179, PR #180), so JavaFX 27-ea CSS resets to the
+             property's declared null initial no longer NPE-storm on every stylesheet swap
+             (ikmdev/komet#886). Only ikonli-javafx carries the
+             -ike-1 build; the icon packs below stay stock 12.3.1. Drop back to the stock
+             version the moment kordamp ships the fix. -->
         <ikonli.version>12.3.1</ikonli.version>
+        <ikonli-javafx.version>12.3.1-ike-1</ikonli-javafx.version>
         <java.version>25</java.version>
         <!-- 27-ea, not the stable 26.x line: opening a concept window ("Open in workspace")
              deterministically corrupts JavaFX's looked-up-color resolution app-wide on every
@@ -891,7 +898,7 @@
             <dependency>
                 <groupId>org.kordamp.ikonli</groupId>
                 <artifactId>ikonli-javafx</artifactId>
-                <version>${ikonli.version}</version>
+                <version>${ikonli-javafx.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.kordamp.ikonli</groupId>
