@@ -655,6 +655,11 @@
             </dependency>
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
+                <artifactId>test-fixtures</artifactId>
+                <version>${tinkar-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.ikm.tinkar</groupId>
                 <artifactId>aggregator</artifactId>
                 <version>${tinkar-core.version}</version>
             </dependency>
