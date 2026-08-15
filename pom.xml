@@ -12,7 +12,7 @@
 
     <groupId>dev.ikm.komet</groupId>
     <artifactId>komet-bom</artifactId>
-    <version>3.0.8-SNAPSHOT</version>
+    <version>3.0.8</version>
     <packaging>pom</packaging>
 
     <name>Komet BOM</name>
@@ -81,7 +81,7 @@
         <javafx.version>27-ea+24</javafx.version>
         <jfx-incubator-richtext.version>27-ea+24</jfx-incubator-richtext.version>
         <commonmark.version>0.24.0</commonmark.version>
-        <ike-commonmark-attributes.version>1.0.1-SNAPSHOT</ike-commonmark-attributes.version>
+        <ike-commonmark-attributes.version>1.0.1</ike-commonmark-attributes.version>
         <jgit.version>6.10.0.202406032230-r-r5</jgit.version>
         <jgrapht.version>1.5.2</jgrapht.version>
         <jheaps.version>0.14-r16</jheaps.version>
@@ -91,7 +91,7 @@
         <jpro.webapi.version>2025.2.0</jpro.webapi.version>
         <jsr305.version>3.0.2-r7</jsr305.version>
         <junit-platform.version>6.0.0</junit-platform.version>
-        <komet.version>1.59.1-SNAPSHOT</komet.version>
+        <komet.version>1.59.1</komet.version>
         <!-- log4j 2.x — stable line. log4j-api / log4j-core /
              log4j-slf4j2-impl all release at the same version, so a
              single property suffices. Avoid the 3.0.0-beta line:
@@ -110,14 +110,14 @@
         <owlapi.version>4.8.7</owlapi.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <roaringbitmap.version>1.6.0</roaringbitmap.version>
-        <rocks-kb.version>0.1.1-SNAPSHOT</rocks-kb.version>
+        <rocks-kb.version>0.1.1</rocks-kb.version>
         <rocksdbjni.version>10.4.2-r2</rocksdbjni.version>
         <scenic-view.version>11.0.2</scenic-view.version>
         <slf4j.version>2.0.17</slf4j.version>
         <testfx.version>4.0.18-jpms</testfx.version>
-        <tinkar-composer.version>1.14.1-SNAPSHOT</tinkar-composer.version>
-        <tinkar-core.version>1.127.3-SNAPSHOT</tinkar-core.version>
-        <tinkar-schema.version>1.43.0</tinkar-schema.version>
+        <tinkar-composer.version>1.14.1</tinkar-composer.version>
+        <tinkar-core.version>1.127.3</tinkar-core.version>
+        <tinkar-schema.version>1.43.1</tinkar-schema.version>
         <tinkar-starter-data-reasoned.version>1.0.0</tinkar-starter-data-reasoned.version>
         <toucan.version>0.9.0</toucan.version>
     </properties>
