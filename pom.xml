@@ -18,6 +18,13 @@
     <name>Komet BOM</name>
     <description>Centralizes dependency versions for Komet application modules</description>
 
+    <scm>
+        <connection>scm:git:https://github.com/ikmdev/komet-bom.git</connection>
+        <developerConnection>scm:git:git@github.com:ikmdev/komet-bom.git</developerConnection>
+        <url>https://github.com/ikmdev/komet-bom</url>
+        <tag>HEAD</tag>
+    </scm>
+
     <distributionManagement>
         <repository>
             <id>ike-releases</id>
