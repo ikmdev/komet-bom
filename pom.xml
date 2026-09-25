@@ -6,7 +6,7 @@
  <parent>
         <groupId>network.ike.platform</groupId>
         <artifactId>ike-parent</artifactId>
-        <version>178</version>
+        <version>182</version>
         <relativePath/>
     </parent>
 
@@ -53,7 +53,7 @@
         <cognitive.version>1.6.1</cognitive.version>
         <common-java5.version>3.5.2</common-java5.version>
         <controlsfx.version>11.2.2</controlsfx.version>
-        <dev.ikm.elk.version>0.40.1-SNAPSHOT</dev.ikm.elk.version>
+        <dev.ikm.elk.version>0.40.1-8bp-jdk27-SNAPSHOT</dev.ikm.elk.version>
         <eclipse-collections.version>13.0.0</eclipse-collections.version>
         <fasterxml-jackson-core.version>2.21.0</fasterxml-jackson-core.version>
         <fxcomponents.version>1.6.2</fxcomponents.version>
