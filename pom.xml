@@ -50,14 +50,14 @@
              (major 71); 9.9 cannot (IKE-Network/ike-issues#1143). -->
         <asm.version>9.10.1</asm.version>
         <axonic.version>1.1.5</axonic.version>
-        <caffeine.version>3.2.3</caffeine.version>
-        <classgraph.version>4.8.179</classgraph.version>
+        <caffeine.version>3.3.0</caffeine.version>
+        <classgraph.version>4.8.196</classgraph.version>
         <cognitive.version>1.6.1</cognitive.version>
         <common-java5.version>3.5.2</common-java5.version>
-        <controlsfx.version>11.2.2</controlsfx.version>
+        <controlsfx.version>11.2.5</controlsfx.version>
         <dev.ikm.elk.version>0.40.1-SNAPSHOT</dev.ikm.elk.version>
         <eclipse-collections.version>13.0.0</eclipse-collections.version>
-        <fasterxml-jackson-core.version>2.21.0</fasterxml-jackson-core.version>
+        <fasterxml-jackson-core.version>2.22.3</fasterxml-jackson-core.version>
         <fxcomponents.version>1.6.2</fxcomponents.version>
         <hybrid-reasoner-snomed.version>1.1.9</hybrid-reasoner-snomed.version>
         <!-- ike-docs (foundation library, UPSTREAM of komet in the release cascade): koncept-core.
@@ -68,7 +68,7 @@
              ike-doc plugins this build runs, so declaring that name here pinned plugin
              resolution to a foundation release predating goals the build expects
              (ike-issues#1004). -->
-        <koncept-core.version>97</koncept-core.version>
+        <koncept-core.version>117</koncept-core.version>
         <ikm-evrete.version>4.0.3</ikm-evrete.version>
         <!-- IKE-patched ikonli-javafx: the ONE change is the FontIcon iconCode listener
              null-guard (kordamp/ikonli#179, PR #180), so JavaFX 27-ea CSS resets to the
@@ -89,10 +89,10 @@
              Keep the incubator module version identical to javafx.version. -->
         <javafx.version>27</javafx.version>
         <jfx-incubator-richtext.version>27</jfx-incubator-richtext.version>
-        <commonmark.version>0.24.0</commonmark.version>
+        <commonmark.version>0.30.0</commonmark.version>
         <ike-commonmark-attributes.version>1.0.5-64bit-SNAPSHOT</ike-commonmark-attributes.version>
         <jgit.version>6.10.0.202406032230-r-r5</jgit.version>
-        <jgrapht.version>1.5.2</jgrapht.version>
+        <jgrapht.version>1.5.3</jgrapht.version>
         <jheaps.version>0.14-r16</jheaps.version>
         <jna.version>5.18.1-r1</jna.version>
         <jpackage.version>1.6.6</jpackage.version>
@@ -860,7 +860,7 @@
             <dependency>
                 <groupId>org.jsonschema2pojo</groupId>
                 <artifactId>jsonschema2pojo-core</artifactId>
-                <version>1.2.2</version>
+                <version>1.3.3</version>
             </dependency>
             <dependency>
                 <groupId>org.jgrapht</groupId>
