@@ -59,7 +59,7 @@
         <eclipse-collections.version>13.0.0</eclipse-collections.version>
         <fasterxml-jackson-core.version>2.22.3</fasterxml-jackson-core.version>
         <fxcomponents.version>1.6.2</fxcomponents.version>
-        <hybrid-reasoner-snomed.version>1.1.9</hybrid-reasoner-snomed.version>
+        <hybrid-reasoner-snomed.version>1.1.11</hybrid-reasoner-snomed.version>
         <!-- ike-docs (foundation library, UPSTREAM of komet in the release cascade): koncept-core.
              97: the IKE Koncept Glyphs face + KonceptGlyphs inventory + KonceptAppearance
              glyph-family accessor (ike-issues#953).
@@ -99,7 +99,7 @@
         <jpms-record-builder-core.version>44-r2</jpms-record-builder-core.version>
         <jpro.webapi.version>2025.2.0</jpro.webapi.version>
         <jsr305.version>3.0.2-r7</jsr305.version>
-        <junit-platform.version>6.0.0</junit-platform.version>
+        <junit-platform.version>6.1.3</junit-platform.version>
         <komet.version>1.59.5-64bit-SNAPSHOT</komet.version>
         <!-- log4j 2.x — stable line. log4j-api / log4j-core /
              log4j-slf4j2-impl all release at the same version, so a
@@ -107,7 +107,7 @@
              beta2→beta3 changed ServiceLoaderUtil in a binary-
              incompatible way, and any api/core skew produces
              NoSuchMethodError at runtime. -->
-        <log4j.version>2.26.0</log4j.version>
+        <log4j.version>2.26.1</log4j.version>
         <lucene.version>10.5.1</lucene.version>
         <mockito.version>5.21.0</mockito.version>
         <mvstore.version>2.5.252-r1</mvstore.version>
@@ -118,11 +118,11 @@
         <openjfx-monocle.version>21.0.2-jpms</openjfx-monocle.version>
         <owlapi.version>4.8.7</owlapi.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <roaringbitmap.version>1.6.0</roaringbitmap.version>
+        <roaringbitmap.version>1.6.23</roaringbitmap.version>
         <rocks-kb.version>0.1.5-64bit-SNAPSHOT</rocks-kb.version>
         <rocksdbjni.version>10.4.2-r2</rocksdbjni.version>
         <scenic-view.version>11.0.2</scenic-view.version>
-        <slf4j.version>2.0.17</slf4j.version>
+        <slf4j.version>2.0.20</slf4j.version>
         <testfx.version>4.0.18-jpms</testfx.version>
         <tinkar-composer.version>1.14.5-64bit-SNAPSHOT</tinkar-composer.version>
         <tinkar-core.version>1.127.7-64bit-SNAPSHOT</tinkar-core.version>
@@ -159,8 +159,11 @@
                 <version>${caffeine.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.github.RoaringBitmap.RoaringBitmap</groupId>
-                <artifactId>roaringbitmap</artifactId>
+                <!-- The Maven Central coordinates. The JitPack ones used before stop at
+                     1.6.0; the official jar carries the same module-info (module
+                     roaringbitmap), so module descriptors need no change. -->
+                <groupId>org.roaringbitmap</groupId>
+                <artifactId>RoaringBitmap</artifactId>
                 <version>${roaringbitmap.version}</version>
             </dependency>
             <dependency>
