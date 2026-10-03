@@ -91,13 +91,13 @@
         <jfx-incubator-richtext.version>27</jfx-incubator-richtext.version>
         <commonmark.version>0.30.0</commonmark.version>
         <ike-commonmark-attributes.version>1.0.5-64bit-SNAPSHOT</ike-commonmark-attributes.version>
-        <jgit.version>6.10.0.202406032230-r-r5</jgit.version>
+        <jgit.version>7.2.0.202503040940-r-r5</jgit.version>
         <jgrapht.version>1.5.3</jgrapht.version>
         <jheaps.version>0.14-r16</jheaps.version>
         <jna.version>5.18.1-r1</jna.version>
         <jpackage.version>1.6.6</jpackage.version>
         <jpms-record-builder-core.version>44-r2</jpms-record-builder-core.version>
-        <jpro.webapi.version>2025.2.0</jpro.webapi.version>
+        <jpro.webapi.version>2026.3.1</jpro.webapi.version>
         <jsr305.version>3.0.2-r7</jsr305.version>
         <junit-platform.version>6.1.3</junit-platform.version>
         <komet.version>1.59.5-64bit-SNAPSHOT</komet.version>
@@ -114,7 +114,8 @@
         <nsmenufx.version>3.1.0</nsmenufx.version>
         <one.jpro.platform.jpms.cssfx.version>11.5.1-jpms</one.jpro.platform.jpms.cssfx.version>
         <one.jpro.platform.jpms.version>4.0.18-jpms</one.jpro.platform.jpms.version>
-        <one.jpro.platform.version>0.5.7</one.jpro.platform.version>
+        <one.jpro.platform.version>0.8.0</one.jpro.platform.version>
+        <one.jpro.platform.jpms.jjwt.version>0.12.6-jpms</one.jpro.platform.jpms.jjwt.version>
         <openjfx-monocle.version>21.0.2-jpms</openjfx-monocle.version>
         <owlapi.version>4.8.7</owlapi.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -736,6 +737,31 @@
                 <groupId>one.jpro.platform</groupId>
                 <artifactId>jpro-auth-core</artifactId>
                 <version>${one.jpro.platform.version}</version>
+                <!-- jpro-auth-core 0.8.0 pulls io.jsonwebtoken:jjwt 0.13.0, an
+                     automatic module. jlink refuses automatic modules, and one
+                     in the graph makes every jar on the module path observable.
+                     Exclude it; the JPMS-packaged jjwt below stands in. -->
+                <exclusions>
+                    <exclusion>
+                        <groupId>io.jsonwebtoken</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>one.jpro.platform.jpms</groupId>
+                <artifactId>jjwt-api</artifactId>
+                <version>${one.jpro.platform.jpms.jjwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>one.jpro.platform.jpms</groupId>
+                <artifactId>jjwt-impl</artifactId>
+                <version>${one.jpro.platform.jpms.jjwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>one.jpro.platform.jpms</groupId>
+                <artifactId>jjwt-orgjson</artifactId>
+                <version>${one.jpro.platform.jpms.jjwt.version}</version>
             </dependency>
             <dependency>
                 <groupId>one.jpro.platform</groupId>
