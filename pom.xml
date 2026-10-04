@@ -110,7 +110,7 @@
         <log4j.version>2.26.0</log4j.version>
         <lucene.version>10.5.1</lucene.version>
         <mockito.version>5.21.0</mockito.version>
-        <mvstore.version>2.3.232-r3</mvstore.version>
+        <mvstore.version>2.5.252-r1</mvstore.version>
         <nsmenufx.version>3.1.0</nsmenufx.version>
         <one.jpro.platform.jpms.cssfx.version>11.5.1-jpms</one.jpro.platform.jpms.cssfx.version>
         <one.jpro.platform.jpms.version>4.0.18-jpms</one.jpro.platform.jpms.version>
