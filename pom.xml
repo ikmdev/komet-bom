@@ -129,7 +129,6 @@
         <scenic-view.version>11.0.2</scenic-view.version>
         <slf4j.version>2.0.20</slf4j.version>
         <testfx.version>4.0.18-jpms</testfx.version>
-        <tinkar-composer.version>1.14.5-64bit-SNAPSHOT</tinkar-composer.version>
         <tinkar-core.version>1.127.7-64bit-SNAPSHOT</tinkar-core.version>
         <tinkar-schema.version>1.43.5-64bit-SNAPSHOT</tinkar-schema.version>
         <tinkar-starter-data-reasoned.version>1.0.0</tinkar-starter-data-reasoned.version>
@@ -525,11 +524,6 @@
                 <groupId>dev.ikm.tinkar</groupId>
                 <artifactId>binding-extension</artifactId>
                 <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>composer</artifactId>
-                <version>${tinkar-composer.version}</version>
             </dependency>
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
