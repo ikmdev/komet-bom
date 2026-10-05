@@ -131,7 +131,6 @@
         <testfx.version>4.0.18-jpms</testfx.version>
         <tinkar-core.version>1.127.7-64bit-SNAPSHOT</tinkar-core.version>
         <tinkar-schema.version>1.43.5-64bit-SNAPSHOT</tinkar-schema.version>
-        <tinkar-starter-data-reasoned.version>1.0.0</tinkar-starter-data-reasoned.version>
         <toucan.version>0.9.0</toucan.version>
     </properties>
 
@@ -683,11 +682,6 @@
                 <groupId>dev.ikm.tinkar</groupId>
                 <artifactId>events</artifactId>
                 <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar.data</groupId>
-                <artifactId>tinkar-starter-data-reasoned</artifactId>
-                <version>${tinkar-starter-data-reasoned.version}</version>
             </dependency>
             <dependency>
                 <groupId>dev.ikm.tinkar.ext.owl</groupId>
