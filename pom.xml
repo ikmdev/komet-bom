@@ -121,7 +121,6 @@
         <one.jpro.platform.version>0.8.0</one.jpro.platform.version>
         <one.jpro.platform.jpms.jjwt.version>0.12.6-jpms</one.jpro.platform.jpms.jjwt.version>
         <openjfx-monocle.version>21.0.2-jpms</openjfx-monocle.version>
-        <owlapi.version>4.8.7</owlapi.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <roaringbitmap.version>1.6.23</roaringbitmap.version>
         <rocks-kb.version>0.1.5-64bit-SNAPSHOT</rocks-kb.version>
@@ -213,22 +212,12 @@
             </dependency>
             <dependency>
                 <groupId>dev.ikm.elk</groupId>
-                <artifactId>elk-owlapi</artifactId>
-                <version>${dev.ikm.elk.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.elk</groupId>
                 <artifactId>elk-reasoner</artifactId>
                 <version>${dev.ikm.elk.version}</version>
             </dependency>
             <dependency>
                 <groupId>dev.ikm.elk</groupId>
                 <artifactId>elk-snomed</artifactId>
-                <version>${dev.ikm.elk.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.elk</groupId>
-                <artifactId>elk-snomed-owl</artifactId>
                 <version>${dev.ikm.elk.version}</version>
             </dependency>
             <dependency>
@@ -498,26 +487,6 @@
                 <version>${komet.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>dev.ikm.owlapi</groupId>
-                <artifactId>owlapi-api</artifactId>
-                <version>${owlapi.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.owlapi</groupId>
-                <artifactId>owlapi-apibinding</artifactId>
-                <version>${owlapi.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.owlapi</groupId>
-                <artifactId>owlapi-impl</artifactId>
-                <version>${owlapi.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.owlapi</groupId>
-                <artifactId>owlapi-parsers</artifactId>
-                <version>${owlapi.version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
