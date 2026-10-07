@@ -498,6 +498,12 @@
                 <artifactId>common</artifactId>
                 <version>${tinkar-core.version}</version>
             </dependency>
+            <!-- The nid build check, a javac plugin each project puts on its processor path. -->
+            <dependency>
+                <groupId>dev.ikm.tinkar</groupId>
+                <artifactId>nid-check</artifactId>
+                <version>${tinkar-core.version}</version>
+            </dependency>
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
                 <artifactId>collection</artifactId>
