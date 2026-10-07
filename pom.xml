@@ -6,7 +6,7 @@
  <parent>
         <groupId>network.ike.platform</groupId>
         <artifactId>ike-parent</artifactId>
-        <version>191</version>
+        <version>196</version>
         <relativePath/>
     </parent>
 
@@ -50,16 +50,20 @@
              (major 71); 9.9 cannot (IKE-Network/ike-issues#1143). -->
         <asm.version>9.10.1</asm.version>
         <axonic.version>1.1.5</axonic.version>
-        <caffeine.version>3.2.3</caffeine.version>
-        <classgraph.version>4.8.179</classgraph.version>
+        <caffeine.version>3.3.0</caffeine.version>
+        <classgraph.version>4.8.196</classgraph.version>
         <cognitive.version>1.6.1</cognitive.version>
         <common-java5.version>3.5.2</common-java5.version>
-        <controlsfx.version>11.2.2</controlsfx.version>
+        <controlsfx.version>11.2.5</controlsfx.version>
+        <!-- On the 64bit sibling this names the sibling's own ikm-reasoner build. ws
+             alignment rewrites only <subproject>.version properties, so it left this one
+             at main's 0.40.1-SNAPSHOT, and every ELK jar reached transitively resolved from
+             main. Restore main's value when the sibling is finished into main. -->
         <dev.ikm.elk.version>0.40.1-SNAPSHOT</dev.ikm.elk.version>
         <eclipse-collections.version>13.0.0</eclipse-collections.version>
-        <fasterxml-jackson-core.version>2.21.0</fasterxml-jackson-core.version>
+        <fasterxml-jackson-core.version>2.22.3</fasterxml-jackson-core.version>
         <fxcomponents.version>1.6.2</fxcomponents.version>
-        <hybrid-reasoner-snomed.version>1.1.9</hybrid-reasoner-snomed.version>
+        <hybrid-reasoner-snomed.version>1.1.11</hybrid-reasoner-snomed.version>
         <!-- ike-docs (foundation library, UPSTREAM of komet in the release cascade): koncept-core.
              97: the IKE Koncept Glyphs face + KonceptGlyphs inventory + KonceptAppearance
              glyph-family accessor (ike-issues#953).
@@ -68,7 +72,7 @@
              ike-doc plugins this build runs, so declaring that name here pinned plugin
              resolution to a foundation release predating goals the build expects
              (ike-issues#1004). -->
-        <koncept-core.version>97</koncept-core.version>
+        <koncept-core.version>117</koncept-core.version>
         <ikm-evrete.version>4.0.3</ikm-evrete.version>
         <!-- IKE-patched ikonli-javafx: the ONE change is the FontIcon iconCode listener
              null-guard (kordamp/ikonli#179, PR #180), so JavaFX 27-ea CSS resets to the
@@ -89,17 +93,17 @@
              Keep the incubator module version identical to javafx.version. -->
         <javafx.version>27</javafx.version>
         <jfx-incubator-richtext.version>27</jfx-incubator-richtext.version>
-        <commonmark.version>0.24.0</commonmark.version>
+        <commonmark.version>0.30.0</commonmark.version>
         <ike-commonmark-attributes.version>1.0.5-SNAPSHOT</ike-commonmark-attributes.version>
-        <jgit.version>6.10.0.202406032230-r-r5</jgit.version>
-        <jgrapht.version>1.5.2</jgrapht.version>
+        <jgit.version>7.2.0.202503040940-r-r5</jgit.version>
+        <jgrapht.version>1.5.3</jgrapht.version>
         <jheaps.version>0.14-r16</jheaps.version>
         <jna.version>5.18.1-r1</jna.version>
         <jpackage.version>1.6.6</jpackage.version>
         <jpms-record-builder-core.version>44-r2</jpms-record-builder-core.version>
-        <jpro.webapi.version>2025.2.0</jpro.webapi.version>
+        <jpro.webapi.version>2026.3.1</jpro.webapi.version>
         <jsr305.version>3.0.2-r7</jsr305.version>
-        <junit-platform.version>6.0.0</junit-platform.version>
+        <junit-platform.version>6.1.3</junit-platform.version>
         <komet.version>1.59.5-SNAPSHOT</komet.version>
         <!-- log4j 2.x — stable line. log4j-api / log4j-core /
              log4j-slf4j2-impl all release at the same version, so a
@@ -107,27 +111,25 @@
              beta2→beta3 changed ServiceLoaderUtil in a binary-
              incompatible way, and any api/core skew produces
              NoSuchMethodError at runtime. -->
-        <log4j.version>2.26.0</log4j.version>
+        <log4j.version>2.26.1</log4j.version>
         <lucene.version>10.5.1</lucene.version>
         <mockito.version>5.21.0</mockito.version>
         <mvstore.version>2.5.252-r1</mvstore.version>
         <nsmenufx.version>3.1.0</nsmenufx.version>
         <one.jpro.platform.jpms.cssfx.version>11.5.1-jpms</one.jpro.platform.jpms.cssfx.version>
         <one.jpro.platform.jpms.version>4.0.18-jpms</one.jpro.platform.jpms.version>
-        <one.jpro.platform.version>0.5.7</one.jpro.platform.version>
+        <one.jpro.platform.version>0.8.0</one.jpro.platform.version>
+        <one.jpro.platform.jpms.jjwt.version>0.12.6-jpms</one.jpro.platform.jpms.jjwt.version>
         <openjfx-monocle.version>21.0.2-jpms</openjfx-monocle.version>
-        <owlapi.version>4.8.7</owlapi.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <roaringbitmap.version>1.6.0</roaringbitmap.version>
+        <roaringbitmap.version>1.6.23</roaringbitmap.version>
         <rocks-kb.version>0.1.5-SNAPSHOT</rocks-kb.version>
         <rocksdbjni.version>10.4.2-r2</rocksdbjni.version>
         <scenic-view.version>11.0.2</scenic-view.version>
-        <slf4j.version>2.0.17</slf4j.version>
+        <slf4j.version>2.0.20</slf4j.version>
         <testfx.version>4.0.18-jpms</testfx.version>
-        <tinkar-composer.version>1.14.5-SNAPSHOT</tinkar-composer.version>
         <tinkar-core.version>1.127.7-SNAPSHOT</tinkar-core.version>
         <tinkar-schema.version>1.43.5-SNAPSHOT</tinkar-schema.version>
-        <tinkar-starter-data-reasoned.version>1.0.0</tinkar-starter-data-reasoned.version>
         <toucan.version>0.9.0</toucan.version>
     </properties>
 
@@ -159,8 +161,11 @@
                 <version>${caffeine.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.github.RoaringBitmap.RoaringBitmap</groupId>
-                <artifactId>roaringbitmap</artifactId>
+                <!-- The Maven Central coordinates. The JitPack ones used before stop at
+                     1.6.0; the official jar carries the same module-info (module
+                     roaringbitmap), so module descriptors need no change. -->
+                <groupId>org.roaringbitmap</groupId>
+                <artifactId>RoaringBitmap</artifactId>
                 <version>${roaringbitmap.version}</version>
             </dependency>
             <dependency>
@@ -207,22 +212,12 @@
             </dependency>
             <dependency>
                 <groupId>dev.ikm.elk</groupId>
-                <artifactId>elk-owlapi</artifactId>
-                <version>${dev.ikm.elk.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.elk</groupId>
                 <artifactId>elk-reasoner</artifactId>
                 <version>${dev.ikm.elk.version}</version>
             </dependency>
             <dependency>
                 <groupId>dev.ikm.elk</groupId>
                 <artifactId>elk-snomed</artifactId>
-                <version>${dev.ikm.elk.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.elk</groupId>
-                <artifactId>elk-snomed-owl</artifactId>
                 <version>${dev.ikm.elk.version}</version>
             </dependency>
             <dependency>
@@ -492,26 +487,6 @@
                 <version>${komet.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>dev.ikm.owlapi</groupId>
-                <artifactId>owlapi-api</artifactId>
-                <version>${owlapi.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.owlapi</groupId>
-                <artifactId>owlapi-apibinding</artifactId>
-                <version>${owlapi.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.owlapi</groupId>
-                <artifactId>owlapi-impl</artifactId>
-                <version>${owlapi.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.owlapi</groupId>
-                <artifactId>owlapi-parsers</artifactId>
-                <version>${owlapi.version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
@@ -520,12 +495,13 @@
             </dependency>
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>composer</artifactId>
-                <version>${tinkar-composer.version}</version>
+                <artifactId>common</artifactId>
+                <version>${tinkar-core.version}</version>
             </dependency>
+            <!-- The nid build check, a javac plugin each project puts on its processor path. -->
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>common</artifactId>
+                <artifactId>nid-check</artifactId>
                 <version>${tinkar-core.version}</version>
             </dependency>
             <dependency>
@@ -639,11 +615,6 @@
             </dependency>
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>reasoner-elk-owl</artifactId>
-                <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
                 <artifactId>reasoner-elk-snomed</artifactId>
                 <version>${tinkar-core.version}</version>
             </dependency>
@@ -674,6 +645,11 @@
             </dependency>
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
+                <artifactId>test-logging</artifactId>
+                <version>${tinkar-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.ikm.tinkar</groupId>
                 <artifactId>aggregator</artifactId>
                 <version>${tinkar-core.version}</version>
             </dependency>
@@ -681,11 +657,6 @@
                 <groupId>dev.ikm.tinkar</groupId>
                 <artifactId>events</artifactId>
                 <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar.data</groupId>
-                <artifactId>tinkar-starter-data-reasoned</artifactId>
-                <version>${tinkar-starter-data-reasoned.version}</version>
             </dependency>
             <dependency>
                 <groupId>dev.ikm.tinkar.ext.owl</groupId>
@@ -728,6 +699,31 @@
                 <groupId>one.jpro.platform</groupId>
                 <artifactId>jpro-auth-core</artifactId>
                 <version>${one.jpro.platform.version}</version>
+                <!-- jpro-auth-core 0.8.0 pulls io.jsonwebtoken:jjwt 0.13.0, an
+                     automatic module. jlink refuses automatic modules, and one
+                     in the graph makes every jar on the module path observable.
+                     Exclude it; the JPMS-packaged jjwt below stands in. -->
+                <exclusions>
+                    <exclusion>
+                        <groupId>io.jsonwebtoken</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>one.jpro.platform.jpms</groupId>
+                <artifactId>jjwt-api</artifactId>
+                <version>${one.jpro.platform.jpms.jjwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>one.jpro.platform.jpms</groupId>
+                <artifactId>jjwt-impl</artifactId>
+                <version>${one.jpro.platform.jpms.jjwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>one.jpro.platform.jpms</groupId>
+                <artifactId>jjwt-orgjson</artifactId>
+                <version>${one.jpro.platform.jpms.jjwt.version}</version>
             </dependency>
             <dependency>
                 <groupId>one.jpro.platform</groupId>
@@ -860,7 +856,7 @@
             <dependency>
                 <groupId>org.jsonschema2pojo</groupId>
                 <artifactId>jsonschema2pojo-core</artifactId>
-                <version>1.2.2</version>
+                <version>1.3.3</version>
             </dependency>
             <dependency>
                 <groupId>org.jgrapht</groupId>
