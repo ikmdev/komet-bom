@@ -530,11 +530,6 @@
             </dependency>
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>data-ephemeral-provider</artifactId>
-                <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
                 <artifactId>data-mvstore-provider</artifactId>
                 <version>${tinkar-core.version}</version>
             </dependency>
