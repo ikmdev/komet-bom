@@ -114,7 +114,6 @@
         <log4j.version>2.26.1</log4j.version>
         <lucene.version>10.5.1</lucene.version>
         <mockito.version>5.21.0</mockito.version>
-        <mvstore.version>2.5.252-r1</mvstore.version>
         <nsmenufx.version>3.1.0</nsmenufx.version>
         <one.jpro.platform.jpms.cssfx.version>11.5.1-jpms</one.jpro.platform.jpms.cssfx.version>
         <one.jpro.platform.jpms.version>4.0.18-jpms</one.jpro.platform.jpms.version>
@@ -326,11 +325,6 @@
             </dependency>
             <dependency>
                 <groupId>dev.ikm.jpms</groupId>
-                <artifactId>mvstore</artifactId>
-                <version>${mvstore.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.jpms</groupId>
                 <artifactId>protobuf-java</artifactId>
                 <version>4.30.2-r3</version>
             </dependency>
@@ -518,7 +512,7 @@
                 Maven keys dependencyManagement entries by
                 groupId+artifactId+type+classifier. The entry above covers the
                 default JAR; this separate entry covers the test-jar classifier
-                so consumers (e.g. data-mvstore-provider tests) can depend on
+                so consumers (provider tests) can depend on
                 'component:tests' without declaring an explicit <version>.
             -->
             <dependency>
@@ -530,22 +524,7 @@
             </dependency>
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>data-mvstore-provider</artifactId>
-                <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
                 <artifactId>data-spinedarray-provider</artifactId>
-                <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>data-websocket-client-provider</artifactId>
-                <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>data-websocket-server-provider</artifactId>
                 <version>${tinkar-core.version}</version>
             </dependency>
             <dependency>
