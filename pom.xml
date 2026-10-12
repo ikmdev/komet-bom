@@ -46,12 +46,12 @@
     <properties>
         <activej-bytebuf.version>4.3-r10</activej-bytebuf.version>
         <apfloat.version>1.14.0-r1</apfloat.version>
-        <!-- Runtime ASM managed for Komet modules — 9.10.1 reads Java 27 class files
-             (major 71); 9.9 cannot (IKE-Network/ike-issues#1143). -->
-        <asm.version>9.10.1</asm.version>
+        <!-- Runtime ASM managed for Komet modules — 9.10.1 was the first to read Java 27
+             class files (major 71); 9.9 cannot (IKE-Network/ike-issues#1143). -->
+        <asm.version>9.11</asm.version>
         <axonic.version>1.1.5</axonic.version>
         <caffeine.version>3.3.0</caffeine.version>
-        <classgraph.version>4.8.196</classgraph.version>
+        <classgraph.version>4.8.198</classgraph.version>
         <cognitive.version>1.6.1</cognitive.version>
         <common-java5.version>3.5.2</common-java5.version>
         <controlsfx.version>11.2.5</controlsfx.version>
@@ -72,7 +72,7 @@
              ike-doc plugins this build runs, so declaring that name here pinned plugin
              resolution to a foundation release predating goals the build expects
              (ike-issues#1004). -->
-        <koncept-core.version>117</koncept-core.version>
+        <koncept-core.version>121</koncept-core.version>
         <ikm-evrete.version>4.0.3</ikm-evrete.version>
         <!-- IKE-patched ikonli-javafx: the ONE change is the FontIcon iconCode listener
              null-guard (kordamp/ikonli#179, PR #180), so JavaFX 27-ea CSS resets to the
@@ -93,7 +93,7 @@
              Keep the incubator module version identical to javafx.version. -->
         <javafx.version>27</javafx.version>
         <jfx-incubator-richtext.version>27</jfx-incubator-richtext.version>
-        <commonmark.version>0.30.0</commonmark.version>
+        <commonmark.version>0.30.1</commonmark.version>
         <ike-commonmark-attributes.version>1.0.5-SNAPSHOT</ike-commonmark-attributes.version>
         <jgit.version>7.2.0.202503040940-r-r5</jgit.version>
         <jgrapht.version>1.5.3</jgrapht.version>
@@ -112,7 +112,7 @@
              incompatible way, and any api/core skew produces
              NoSuchMethodError at runtime. -->
         <log4j.version>2.26.1</log4j.version>
-        <lucene.version>10.5.1</lucene.version>
+        <lucene.version>10.5.2</lucene.version>
         <mockito.version>5.21.0</mockito.version>
         <nsmenufx.version>3.1.0</nsmenufx.version>
         <one.jpro.platform.jpms.cssfx.version>11.5.1-jpms</one.jpro.platform.jpms.cssfx.version>
@@ -121,7 +121,7 @@
         <one.jpro.platform.jpms.jjwt.version>0.12.6-jpms</one.jpro.platform.jpms.jjwt.version>
         <openjfx-monocle.version>21.0.2-jpms</openjfx-monocle.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <roaringbitmap.version>1.6.23</roaringbitmap.version>
+        <roaringbitmap.version>1.6.24</roaringbitmap.version>
         <rocks-kb.version>0.1.5-SNAPSHOT</rocks-kb.version>
         <rocksdbjni.version>10.4.2-r2</rocksdbjni.version>
         <scenic-view.version>11.0.2</scenic-view.version>
