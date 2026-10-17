@@ -211,6 +211,11 @@
             </dependency>
             <dependency>
                 <groupId>dev.ikm.elk</groupId>
+                <artifactId>elk-owl-parsing-javacc</artifactId>
+                <version>${dev.ikm.elk.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.ikm.elk</groupId>
                 <artifactId>elk-reasoner</artifactId>
                 <version>${dev.ikm.elk.version}</version>
             </dependency>
