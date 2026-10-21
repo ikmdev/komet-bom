@@ -539,6 +539,11 @@
             </dependency>
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
+                <artifactId>data-spinedarray64-provider</artifactId>
+                <version>${tinkar-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.ikm.tinkar</groupId>
                 <artifactId>entity</artifactId>
                 <version>${tinkar-core.version}</version>
             </dependency>
