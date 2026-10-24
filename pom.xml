@@ -510,11 +510,6 @@
             </dependency>
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>collection</artifactId>
-                <version>${tinkar-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
                 <artifactId>component</artifactId>
                 <version>${tinkar-core.version}</version>
             </dependency>
@@ -531,11 +526,6 @@
                 <version>${tinkar-core.version}</version>
                 <type>test-jar</type>
                 <classifier>tests</classifier>
-            </dependency>
-            <dependency>
-                <groupId>dev.ikm.tinkar</groupId>
-                <artifactId>data-spinedarray-provider</artifactId>
-                <version>${tinkar-core.version}</version>
             </dependency>
             <dependency>
                 <groupId>dev.ikm.tinkar</groupId>
