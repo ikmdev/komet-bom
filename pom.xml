@@ -67,12 +67,14 @@
         <!-- ike-docs (foundation library, UPSTREAM of komet in the release cascade): koncept-core.
              97: the IKE Koncept Glyphs face + KonceptGlyphs inventory + KonceptAppearance
              glyph-family accessor (ike-issues#953).
+             139: KonceptStatus.UNDEFINED, the C a concept with no stated definition
+             leads with (ike-issues#742); the framework delegates to it.
              Named for the artifact it pins, not for its producing repository: the
              ike-docs version property is inherited from ike-parent and selects the
              ike-doc plugins this build runs, so declaring that name here pinned plugin
              resolution to a foundation release predating goals the build expects
              (ike-issues#1004). -->
-        <koncept-core.version>121</koncept-core.version>
+        <koncept-core.version>139</koncept-core.version>
         <ikm-evrete.version>4.0.3</ikm-evrete.version>
         <!-- IKE-patched ikonli-javafx: the ONE change is the FontIcon iconCode listener
              null-guard (kordamp/ikonli#179, PR #180), so JavaFX 27-ea CSS resets to the
