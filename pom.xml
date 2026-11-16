@@ -782,6 +782,13 @@
                 <artifactId>lucene-core</artifactId>
                 <version>${lucene.version}</version>
             </dependency>
+            <!-- The analyzers and the synonym filter the text knowledge plugin reads documents
+                 with (IKE-Network/ike-issues#1372). -->
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-analysis-common</artifactId>
+                <version>${lucene.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.apache.lucene</groupId>
                 <artifactId>lucene-backward-codecs</artifactId>
