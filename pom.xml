@@ -92,10 +92,11 @@
              JDK-8375363 CssStyleHelper.resetToInitialValues() lifecycle rewrite (mainline Jan 2026,
              never backported to jfx26u). Pinned to 27-ea+24 until 27 GA shipped (2026-09-15);
              moved to GA with JDK 27 (IKE-Network/ike-issues#1143), then to the 27.0.1 update
-             (IKE-Network/ike-issues#1388). See IKE-Network/ike-komet-wsr#4.
+             (IKE-Network/ike-issues#1388), then to 27.0.1.1, the November 2026 security update
+             (IKE-Network/ike-issues#1393). See IKE-Network/ike-komet-wsr#4.
              Keep the incubator module version identical to javafx.version. -->
-        <javafx.version>27.0.1</javafx.version>
-        <jfx-incubator-richtext.version>27.0.1</jfx-incubator-richtext.version>
+        <javafx.version>27.0.1.1</javafx.version>
+        <jfx-incubator-richtext.version>27.0.1.1</jfx-incubator-richtext.version>
         <commonmark.version>0.30.1</commonmark.version>
         <ike-commonmark-attributes.version>1.0.5-SNAPSHOT</ike-commonmark-attributes.version>
         <jgit.version>7.2.0.202503040940-r-r5</jgit.version>
